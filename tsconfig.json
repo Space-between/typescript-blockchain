@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "module": "commonjs", //node.js를 평범하게 사용하고 다양한 걸 import하거나 export할 수 있게 만드는 곳
+        "target": "ES2015", //어떤버전의 자바스크립트로 컴파일 되고 싶은지 적는 곳
+        "sourceMap":true, //sourcemap 처리를 하고 싶은지 알려주는 곳 
+        "outDir": "dist", // tsc를 통해 ts파일이 컴파일되어서 만들어진 .js파일과 .js.map파일이 저장되는 곳
+    },
+    "include": [ //어떤파일들이 컴파일 과정에 포함되는지 타입스크립트에게 알려주는 곳, include라고 부르고 컴파일 과정에서 포함할 파일의 배열을 적으면 된다. ,
+        "src/**/*" //컴파일하려는 ts파일의 위치
+    ],
+    "exclude": [ //컴파일 대상에서 제외시킬 파일
+        "node_modules"
+    ]
+}
